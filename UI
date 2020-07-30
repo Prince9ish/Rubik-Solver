@@ -1,0 +1,11 @@
+from __future__ import print_function,division
+from graphics import GUI
+from cube import Cube
+
+c=Cube()
+graphics=GUI(c)
+c.registerGraphicsHandler(graphics)
+c.startRecording()
+c.actionRealTime("L' B' R'")
+graphics.begin()
+c.updateFaceColors()
